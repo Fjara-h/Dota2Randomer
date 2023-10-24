@@ -75,6 +75,7 @@ namespace Dota2Randomer {
 		private void closeButton_Click(object sender, RoutedEventArgs e) {
 			RandomHero_Button.ToolTip = "";
 			Settings.Default.WindowLocation = new System.Drawing.Point((int)Top, (int)Left);
+			Settings.Default.WaitTime = Settings.Default.WaitTime;
 			Settings.Default.Save();
 			Application.Current.Shutdown();
 		}
